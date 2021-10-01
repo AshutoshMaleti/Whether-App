@@ -1,6 +1,7 @@
-from django.urls import path, include
-import home.views
+from django.urls import path
+from home import views
 
 urlpatterns = [
-    path('/', ),
+    path('', views.index, name='index'),
+    path('full_report', views.full, name='full')
 ]
