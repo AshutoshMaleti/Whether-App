@@ -3,7 +3,7 @@ from django.db.models.base import Model
 
 # Create your models here.
 class City(models.Model):
-    city = models.CharField(max_length=25, verbose_name='city')
+    city = models.CharField(max_length=25)
 
     class Meta:
         db_table = 'City'
